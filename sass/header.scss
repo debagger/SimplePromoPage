@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  align-items: center;
+  background: lightgray;
+  margin: 0 0;
+  font-size: 0.8em;
+  .logo {
+    margin: 0 0;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .period {
+    display: flex;
+    &::before {
+      @extend %fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-user);
+      height: 100%;
+    }
+  }
+  .address {
+    margin-left: auto;
+  }
+  .phone {
+  }
+}

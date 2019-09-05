@@ -1,5 +1,7 @@
 @import "bootstrap/scss/bootstrap-reboot";
 @import "fonts";
+@import "header";
+@import "main";
 
 $media-breakpoints: (576px, 768px, 992px, 1200px);
 
@@ -22,8 +24,5 @@ p {
 }
 section {
   display: flex;
-  &.main {
-    background: rgb(194, 72, 72);
-    color: white;
-  }
+  margin: 0 0;
 }
