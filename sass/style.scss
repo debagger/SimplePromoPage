@@ -22,4 +22,8 @@ p {
 }
 section {
   display: flex;
+  &.main {
+    background: rgb(194, 72, 72);
+    color: white;
+  }
 }

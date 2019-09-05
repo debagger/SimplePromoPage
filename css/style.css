@@ -308,3 +308,6 @@ p {
 
 section {
   display: flex; }
+  section.main {
+    background: #c24848;
+    color: white; }
