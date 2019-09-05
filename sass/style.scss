@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap-reboot";
+@import "fonts";
+
+$media-breakpoints: (576px, 768px, 992px, 1200px);
+
+body {
+  padding: 0 0;
+  color: black;
+  background: white;
+  font-family: "Gotham Pro Regular";
+}
+
+@each $min-width in $media-breakpoints {
+  @media (min-width: $min-width) {
+    body {
+      margin: 0 calc(60% - #{$min-width/2});
+    }
+  }
+}
+p {
+  font-family: "Gotham Pro Light";
+}
+section {
+  display: flex;
+}
