@@ -273,7 +273,10 @@ template {
  */
 .fa,
 .fas,
+header .logo::before,
 header .period::before,
+header .address::before,
+header .phone::before,
 .far,
 .fal,
 .fad,
@@ -286,7 +289,7 @@ header .period::before,
   text-rendering: auto;
   line-height: 1; }
 
-header .period::before {
+header .logo::before, header .period::before, header .address::before, header .phone::before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -367,7 +370,10 @@ header .period::before {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+header .fa-pull-left.logo::before,
 header .fa-pull-left.period::before,
+header .fa-pull-left.address::before,
+header .fa-pull-left.phone::before,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -375,7 +381,10 @@ header .fa-pull-left.period::before,
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+header .fa-pull-right.logo::before,
 header .fa-pull-right.period::before,
+header .fa-pull-right.address::before,
+header .fa-pull-right.phone::before,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -4638,7 +4647,10 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas,
-header .period::before {
+header .logo::before,
+header .period::before,
+header .address::before,
+header .phone::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -4661,18 +4673,42 @@ header {
   align-items: center;
   background: lightgray;
   margin: 0 0;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  padding: 8px 20px; }
   header .logo {
+    display: flex;
+    align-items: center;
     margin: 0 0;
     font-size: 2em;
     font-weight: 700; }
+    header .logo::before {
+      content: "\f52b";
+      height: 100%;
+      padding: 6px 6px; }
   header .period {
+    margin-left: 20px;
+    align-items: center;
     display: flex; }
     header .period::before {
-      content: "\f007";
-      height: 100%; }
+      content: "\f017";
+      font-size: 20px;
+      margin-right: 10px; }
   header .address {
-    margin-left: auto; }
+    margin-left: auto;
+    align-items: center;
+    display: flex; }
+    header .address::before {
+      content: "\f3c5";
+      font-size: 20px;
+      margin-right: 10px; }
+  header .phone {
+    margin-left: 30px;
+    align-items: center;
+    display: flex; }
+    header .phone::before {
+      content: "\f095";
+      font-size: 20px;
+      margin-right: 10px; }
 
 .main {
   background: #c24848;
