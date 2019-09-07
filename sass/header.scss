@@ -4,23 +4,44 @@ header {
   background: lightgray;
   margin: 0 0;
   font-size: 0.8em;
-  .logo {
-    margin: 0 0;
-    font-size: 2em;
-    font-weight: 700;
-  }
-  .period {
+  padding: 8px 20px;
+
+  @mixin addicon($symbol) {
+    align-items: center;
     display: flex;
     &::before {
       @extend %fa-icon;
       @extend .fas;
-      content: fa-content($fa-var-user);
-      height: 100%;
+      content: fa-content($symbol);
+      font-size: 20px;
+      margin-right: 10px;
     }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 0;
+    font-size: 2em;
+    font-weight: 700;
+    &::before {
+      @extend %fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-door-open);
+      height: 100%;
+      padding: 6px 6px;
+    }
+  }
+  .period {
+    margin-left: 20px;
+    @include addicon($fa-var-clock);
   }
   .address {
     margin-left: auto;
+    @include addicon($fa-var-map-marker-alt);
   }
   .phone {
+    margin-left: 30px;
+    @include addicon($fa-var-phone);
   }
 }
