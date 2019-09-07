@@ -4679,12 +4679,13 @@ header {
     display: flex;
     align-items: center;
     margin: 0 0;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 700; }
     header .logo::before {
       content: "\f52b";
       height: 100%;
       padding: 6px 6px;
+      font-size: 1.4em;
       color: #ffc400; }
   header .period {
     margin-left: 30px;
@@ -4692,7 +4693,7 @@ header {
     display: flex; }
     header .period::before {
       content: "\f017";
-      font-size: 20px;
+      font-size: 2em;
       margin-right: 10px;
       color: #ffc400; }
   header .address {
@@ -4701,7 +4702,7 @@ header {
     display: flex; }
     header .address::before {
       content: "\f3c5";
-      font-size: 20px;
+      font-size: 2em;
       margin-right: 10px;
       color: #ffc400; }
   header .phone {
@@ -4710,43 +4711,92 @@ header {
     display: flex; }
     header .phone::before {
       content: "\f095";
-      font-size: 20px;
+      font-size: 2em;
       margin-right: 10px;
       color: #ffc400; }
 
 .main {
-  background: url("/img/main-bg.jpg");
   background-size: auto auto;
   background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("/img/main-bg.jpg");
   background-position: center;
-  background-size: 100%, 150%;
+  background-size: 100%, 180%;
   color: white;
-  padding: 50px 50% 50px 50px; }
+  padding: 10em 3em 4em 10em; }
+  @media (min-width: 576px) {
+    .main {
+      padding-right: 35%;
+      background-size: 100%, 185.71429%; } }
+  @media (min-width: 768px) {
+    .main {
+      padding-right: 40%;
+      background-size: 100%, 162.5%; } }
+  @media (min-width: 992px) {
+    .main {
+      padding-right: 45%;
+      background-size: 100%, 144.44444%; } }
+  @media (min-width: 1200px) {
+    .main {
+      padding-right: 50%;
+      background-size: 100%, 130%; } }
+
+.products {
+  display: flex;
+  padding-top: 2em;
+  align-items: center;
+  flex-direction: column;
+  background: white; }
+  .products h1 {
+    font-size: 2em; }
+  .products h2 {
+    font-weight: 500; }
+  .products ul {
+    display: grid;
+    grid-template-columns: 13em 13em 13em 13em;
+    list-style: none; }
+    .products ul li {
+      width: 13em; }
+      .products ul li img {
+        width: 12em;
+        justify-self: center; }
+      .products ul li p {
+        font-size: 0.8em; }
+        .products ul li p:first-of-type {
+          font-family: "Gotham Pro Regular";
+          font-size: 1em;
+          font-weight: 700; }
+        .products ul li p:last-of-type {
+          font-weight: 700; }
 
 body {
   padding: 0 0;
   color: black;
   background: white;
-  font-family: "Gotham Pro Regular"; }
+  font-family: "Gotham Pro Regular";
+  font-size: 0.6em; }
 
 @media (min-width: 576px) {
   body {
-    margin: 0 calc(60% - 288px); } }
+    margin: 0 calc(50% - 288px);
+    font-size: 0.7em; } }
 
 @media (min-width: 768px) {
   body {
-    margin: 0 calc(60% - 384px); } }
+    margin: 0 calc(50% - 384px);
+    font-size: 0.8em; } }
 
 @media (min-width: 992px) {
   body {
-    margin: 0 calc(60% - 496px); } }
+    margin: 0 calc(50% - 496px);
+    font-size: 0.9em; } }
 
 @media (min-width: 1200px) {
   body {
-    margin: 0 calc(60% - 600px); } }
+    margin: 0 calc(50% - 600px);
+    font-size: 1em; } }
 
 p {
-  font-family: "Gotham Pro Light"; }
+  font-family: "Gotham Pro Light";
+  margin: 1em 0px; }
 
 section, .main {
   display: flex;
@@ -4757,8 +4807,8 @@ section, .main {
   background: #ffc400;
   border: #cc9d00 solid 1px;
   text-align: center;
-  padding: 10px 20px;
-  border-radius: 100px;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
   font-family: "Gotham Pro Regular";
   font-weight: 700;
   color: black; }

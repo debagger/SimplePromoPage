@@ -1,28 +1,32 @@
 $elements-color: rgb(255, 196, 0);
+$media-breakpoints: 576px 0.7, 768px 0.8, 992px 0.9, 1200px 1;
 
 @import "bootstrap/scss/bootstrap-reboot";
 @import "fonts";
 @import "header";
 @import "main";
-
-$media-breakpoints: (576px, 768px, 992px, 1200px);
+@import "products";
 
 body {
   padding: 0 0;
   color: black;
   background: white;
   font-family: "Gotham Pro Regular";
+  font-size: 0.6em;
 }
 
-@each $min-width in $media-breakpoints {
+@each $min-width, $size in $media-breakpoints {
   @media (min-width: $min-width) {
     body {
-      margin: 0 calc(60% - #{$min-width/2});
+      margin: 0 calc(50% - #{$min-width/2});
+      font-size: 1em * $size;
     }
   }
 }
+
 p {
   font-family: "Gotham Pro Light";
+  margin: 1em 0px;
 }
 section {
   display: flex;
@@ -34,8 +38,8 @@ $btn-color: $elements-color;
   background: $btn-color;
   border: darken($btn-color, 10%) solid 1px;
   text-align: center;
-  padding: 10px 20px;
-  border-radius: 100px;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
   font-family: "Gotham Pro Regular";
   font-weight: 700;
   color: black;

@@ -1,0 +1,36 @@
+.products {
+  display: flex;
+  padding-top: 2em;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-weight: 500;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 13em 13em 13em 13em;
+    list-style: none;
+    li {
+      width: 13em;
+      img {
+        width: 12em;
+        justify-self: center;
+      }
+      p {
+        font-size: 0.8em;
+        &:first-of-type {
+          font-family: "Gotham Pro Regular";
+          font-size: 1em;
+          font-weight: 700;
+        }
+        &:last-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

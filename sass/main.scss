@@ -1,6 +1,5 @@
 .main {
   @extend section;
-  background: url("/img/main-bg.jpg");
   background-size: auto auto;
   $o: 0.6;
   background-image: repeating-linear-gradient(
@@ -12,7 +11,13 @@
     ),
     url("/img/main-bg.jpg");
   background-position: center;
-  background-size: 100%, 150%;
+  background-size: 100%, 180%;
   color: white;
-  padding: 50px 50% 50px 50px;
+  padding: 10em 3em 4em 10em;
+  @each $min-width, $size in $media-breakpoints {
+    @media (min-width: $min-width) {
+      padding-right: 50% * $size;
+      background-size: 100%, 130% / $size;
+    }
+  }
 }
