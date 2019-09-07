@@ -4671,7 +4671,7 @@ header .phone::before {
 header {
   display: flex;
   align-items: center;
-  background: lightgray;
+  background: white;
   margin: 0 0;
   font-size: 0.8em;
   padding: 8px 20px; }
@@ -4679,20 +4679,22 @@ header {
     display: flex;
     align-items: center;
     margin: 0 0;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700; }
     header .logo::before {
       content: "\f52b";
       height: 100%;
-      padding: 6px 6px; }
+      padding: 6px 6px;
+      color: #ffc400; }
   header .period {
-    margin-left: 20px;
+    margin-left: 30px;
     align-items: center;
     display: flex; }
     header .period::before {
       content: "\f017";
       font-size: 20px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      color: #ffc400; }
   header .address {
     margin-left: auto;
     align-items: center;
@@ -4700,7 +4702,8 @@ header {
     header .address::before {
       content: "\f3c5";
       font-size: 20px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      color: #ffc400; }
   header .phone {
     margin-left: 30px;
     align-items: center;
@@ -4708,11 +4711,17 @@ header {
     header .phone::before {
       content: "\f095";
       font-size: 20px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      color: #ffc400; }
 
 .main {
-  background: #c24848;
-  color: white; }
+  background: url("/img/main-bg.jpg");
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("/img/main-bg.jpg");
+  background-position: center;
+  background-size: 100%, 150%;
+  color: white;
+  padding: 50px 50% 50px 50px; }
 
 body {
   padding: 0 0;
@@ -4742,3 +4751,23 @@ p {
 section, .main {
   display: flex;
   margin: 0 0; }
+
+.promo-button {
+  display: inline-block;
+  background: #ffc400;
+  border: #cc9d00 solid 1px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-family: "Gotham Pro Regular";
+  font-weight: 700;
+  color: black; }
+  .promo-button:link {
+    color: black;
+    font-family: "Gotham Pro Regular";
+    font-weight: 700; }
+  .promo-button:visited {
+    color: black; }
+  .promo-button:hover {
+    background: #ffd033;
+    text-decoration: none; }

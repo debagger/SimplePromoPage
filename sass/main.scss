@@ -1,5 +1,18 @@
 .main {
   @extend section;
-  background: rgb(194, 72, 72);
+  background: url("/img/main-bg.jpg");
+  background-size: auto auto;
+  $o: 0.6;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, $o - 0.01),
+      rgba(0, 0, 0, $o - 0.01) 5px,
+      rgba(0, 0, 0, $o) 5px,
+      rgba(0, 0, 0, $o) 10px
+    ),
+    url("/img/main-bg.jpg");
+  background-position: center;
+  background-size: 100%, 150%;
   color: white;
+  padding: 50px 50% 50px 50px;
 }

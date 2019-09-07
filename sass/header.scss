@@ -1,7 +1,7 @@
 header {
   display: flex;
   align-items: center;
-  background: lightgray;
+  background: white;
   margin: 0 0;
   font-size: 0.8em;
   padding: 8px 20px;
@@ -15,6 +15,7 @@ header {
       content: fa-content($symbol);
       font-size: 20px;
       margin-right: 10px;
+      color: $elements-color;
     }
   }
 
@@ -22,18 +23,20 @@ header {
     display: flex;
     align-items: center;
     margin: 0 0;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
+
     &::before {
       @extend %fa-icon;
       @extend .fas;
       content: fa-content($fa-var-door-open);
       height: 100%;
       padding: 6px 6px;
+      color: $elements-color;
     }
   }
   .period {
-    margin-left: 20px;
+    margin-left: 30px;
     @include addicon($fa-var-clock);
   }
   .address {
