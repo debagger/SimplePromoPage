@@ -1,22 +1,22 @@
-$fa-font-path: "/fonts";
+$fa-font-path: "../fonts";
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/solid.scss";
 
 @font-face {
   font-family: "Gotham Pro Regular";
-  src: url("/fonts/GothamPro.eot");
-  src: url("/fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/GothamPro.woff") format("woff"),
-    url("/fonts/GothamPro.ttf") format("truetype");
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro.woff") format("woff"),
+    url("../fonts/GothamPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham Pro Light";
-  src: url("/fonts/GothamPro-Light.eot");
-  src: url("/fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/GothamPro-Light.woff") format("woff"),
-    url("/fonts/GothamPro-Light.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro-Light.woff") format("woff"),
+    url("../fonts/GothamPro-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

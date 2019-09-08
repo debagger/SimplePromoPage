@@ -4642,8 +4642,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url("/fonts/fa-solid-900.eot");
-  src: url("/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-solid-900.woff2") format("woff2"), url("/fonts/fa-solid-900.woff") format("woff"), url("/fonts/fa-solid-900.ttf") format("truetype"), url("/fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas,
@@ -4656,15 +4656,15 @@ header .phone::before {
 
 @font-face {
   font-family: "Gotham Pro Regular";
-  src: url("/fonts/GothamPro.eot");
-  src: url("/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro.woff") format("woff"), url("/fonts/GothamPro.ttf") format("truetype");
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Gotham Pro Light";
-  src: url("/fonts/GothamPro-Light.eot");
-  src: url("/fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro-Light.woff") format("woff"), url("/fonts/GothamPro-Light.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -4717,7 +4717,7 @@ header {
 
 .main {
   background-size: auto auto;
-  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("/img/main-bg.jpg");
+  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("img/main-bg.jpg");
   background-position: center;
   background-size: 100%, 180%;
   color: white;
