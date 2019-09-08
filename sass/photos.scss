@@ -1,0 +1,16 @@
+.photos {
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+  background: grey;
+  justify-content: center;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    max-width: 20%;
+    height: auto;
+    margin: 1em;
+  }
+}

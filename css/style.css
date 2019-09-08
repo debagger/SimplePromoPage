@@ -4771,17 +4771,33 @@ header {
 .about {
   background: #2c2c2c;
   color: white;
-  padding: 4em 4em; }
+  padding: 4em 4em;
+  font-size: 0.9em; }
   .about div {
     display: flex;
     flex-direction: column;
     justify-content: center; }
     .about div:first-of-type {
-      padding-right: 3em;
+      padding-right: 2em;
+      padding-left: 2em;
       margin-right: auto; }
     .about div img {
       max-width: 100%;
       height: auto; }
+
+.photos {
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+  background: grey;
+  justify-content: center; }
+  .photos h1 {
+    width: 100%;
+    text-align: center; }
+  .photos img {
+    max-width: 20%;
+    height: auto;
+    margin: 1em; }
 
 body {
   padding: 0 0;
