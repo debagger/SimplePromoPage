@@ -1,0 +1,24 @@
+.about {
+  background: rgb(44, 44, 44);
+  color: white;
+  //   font-size: 0.9em;
+  padding: 4em 4em;
+  div {
+    // width: 45%;
+    &:first-of-type {
+      padding-right: 3em;
+      margin-right: auto;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-content: center;
+    // flex-basis: 100&;
+    // border: red solid 1px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

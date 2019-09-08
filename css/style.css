@@ -4742,6 +4742,7 @@ header {
 .products {
   display: flex;
   padding-top: 2em;
+  padding-bottom: 2em;
   align-items: center;
   flex-direction: column;
   background: white; }
@@ -4766,6 +4767,21 @@ header {
           font-weight: 700; }
         .products ul li p:last-of-type {
           font-weight: 700; }
+
+.about {
+  background: #2c2c2c;
+  color: white;
+  padding: 4em 4em; }
+  .about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .about div:first-of-type {
+      padding-right: 3em;
+      margin-right: auto; }
+    .about div img {
+      max-width: 100%;
+      height: auto; }
 
 body {
   padding: 0 0;
