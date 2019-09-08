@@ -2,9 +2,6 @@
 
 Simple html promopage with sass style.
 
----
+## Demo link
 
-Demo link
-permalink: /index.html
-
----
+## permalink: /index.html
