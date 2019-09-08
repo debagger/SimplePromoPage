@@ -4717,7 +4717,7 @@ header {
 
 .main {
   background-size: auto auto;
-  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("img/main-bg.jpg");
+  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59) 5px, rgba(0, 0, 0, 0.6) 5px, rgba(0, 0, 0, 0.6) 10px), url("../img/main-bg.jpg");
   background-position: center;
   background-size: 100%, 180%;
   color: white;
