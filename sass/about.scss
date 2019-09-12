@@ -2,13 +2,15 @@
   background: rgb(44, 44, 44);
   color: white;
   padding: 4em 4em;
-  font-size: 0.9em;
-
+  font-size: 0.8em;
+  align-items: stretch;
+  p {
+    margin: 0em 0em 1em 0em;
+  }
   div {
     &:first-of-type {
-      padding-right: 2em;
       padding-left: 2em;
-      margin-right: auto;
+      margin-right: 2em;
     }
     display: flex;
     flex-direction: column;

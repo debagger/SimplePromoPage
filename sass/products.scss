@@ -2,19 +2,24 @@
   display: flex;
   padding-top: 2em;
   padding-bottom: 2em;
-  align-items: center;
-  flex-direction: column;
+  align-content: stretch;
+  flex-direction: row;
+  flex-flow: wrap;
   background: white;
   h1 {
     font-size: 2em;
+    margin-right: auto;
   }
   h2 {
     font-weight: 500;
   }
   ul {
-    display: grid;
-    grid-template-columns: 13em 13em 13em 13em;
+    padding: 0em;
+    border: red solid 1px;
+    // width: max-content;
+    display: inline-flex;
     list-style: none;
+    flex-flow: wrap;
     li {
       width: 13em;
       img {
